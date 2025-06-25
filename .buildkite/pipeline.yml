@@ -1,0 +1,9 @@
+steps:
+  - label: ":jenkins:"
+    plugins:
+      docker:
+        # https://github.com/jenkinsci/jenkinsfile-runner#vanilla-distribution
+        # https://hub.docker.com/r/jenkins/jenkinsfile-runner
+        image: jenkins/jenkinsfile-runner
+        # Jenkinsfile Runner expects to find the working directory here
+        workdir: /workspace
